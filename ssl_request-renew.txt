@@ -1,0 +1,6 @@
+CentOS
+Location check of expired ssl certificates
+/etc/httpd/conf.d/ssl.conf
+
+Request/Renew
+openssl req -new -days 365 -x509 -nodes -out /path/to/.crt -keyout /path/to/.key
