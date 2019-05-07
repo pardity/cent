@@ -4,3 +4,5 @@ Location check of expired ssl certificates
 
 Request/Renew
 openssl req -new -days 365 -x509 -nodes -out /path/to/.crt -keyout /path/to/.key
+or
+openssl req -new -key ssl/testingcert.key -out ssl/new.csr
